@@ -31,7 +31,8 @@ public class CompanyDto {
     private String pinCode;
 
     //@Pattern(regexp = "\\d{10}", message = "Contact number must be 10 digits")
-    private String contactNum;
+    @NullOrNotBlank(isContactNumber = "yes", message = "Contact number must be exactly 10 digits")
+    private String contactNumber;
 
     @NullOrNotBlank(min = 5, max = 50, isEmail="yes",message = "Valid email address is required and must be between {min} and {max} characters")
     private String email;

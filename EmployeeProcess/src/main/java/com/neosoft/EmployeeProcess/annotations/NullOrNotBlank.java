@@ -17,6 +17,8 @@ public @interface NullOrNotBlank {
 	int max() default 0;
 	String isMandatory() default "yes";
     String isEmail() default "no";
+    String isContactNumber() default "no";
+
 
     Class<? extends Payload>[] payload() default {};
 }

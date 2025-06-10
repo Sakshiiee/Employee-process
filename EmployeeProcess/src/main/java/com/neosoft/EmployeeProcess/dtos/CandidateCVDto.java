@@ -23,7 +23,7 @@ public class CandidateCVDto {
     private String email;
 
     //@NotBlank(message = "Contact number is required")
-    private String contactNum;
+    private String contactNumber;
 
     //@NotBlank(message = "Resume URL or file path is required")
     private String resumeUrl;
