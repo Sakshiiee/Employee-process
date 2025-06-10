@@ -17,8 +17,7 @@ import java.util.List;
 public class InterviewBatch {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "interview_batch_seq")
-    @SequenceGenerator(name = "interview_batch_seq", sequenceName = "INTERVIEW_BATCH_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 

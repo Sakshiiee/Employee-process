@@ -13,8 +13,7 @@ import lombok.*;
 public class Criteria {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "criteria_seq")
-    @SequenceGenerator(name = "criteria_seq", sequenceName = "CRITERIA_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 

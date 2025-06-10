@@ -9,12 +9,11 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "candidate_cv")
+@Table(name = "candidateCV")
 public class CandidateCV {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "candidate_cv_seq")
-    @SequenceGenerator(name = "candidate_cv_seq", sequenceName = "CANDIDATE_CV_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 

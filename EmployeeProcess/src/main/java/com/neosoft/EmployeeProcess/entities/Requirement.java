@@ -13,8 +13,7 @@ import lombok.*;
 public class Requirement {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "requirement_seq")
-    @SequenceGenerator(name = "requirement_seq", sequenceName = "REQUIREMENT_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 

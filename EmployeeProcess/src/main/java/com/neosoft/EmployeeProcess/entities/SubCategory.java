@@ -13,8 +13,7 @@ import lombok.*;
 public class SubCategory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "subcat_seq")
-    @SequenceGenerator(name = "subcat_seq", sequenceName = "SUBCATEGORY_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 

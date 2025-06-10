@@ -13,8 +13,7 @@ import lombok.*;
 public class Screening {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "screening_seq")
-    @SequenceGenerator(name = "screening_seq", sequenceName = "SCREENING_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
