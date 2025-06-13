@@ -1,4 +1,4 @@
-package com.neosoft.EmployeeProcess.annotations;
+package com.neosoft.EmployeeProcess.annotation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
@@ -17,8 +17,5 @@ public @interface NullOrNotBlank {
 	int max() default 0;
 	String isMandatory() default "yes";
     String isEmail() default "no";
-    String isContactNumber() default "no";
-
-
     Class<? extends Payload>[] payload() default {};
 }

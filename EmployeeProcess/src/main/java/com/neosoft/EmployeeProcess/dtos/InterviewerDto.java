@@ -1,6 +1,6 @@
 package com.neosoft.EmployeeProcess.dtos;
 
-import com.neosoft.EmployeeProcess.annotations.NullOrNotBlank;
+import com.neosoft.EmployeeProcess.annotation.NullOrNotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;

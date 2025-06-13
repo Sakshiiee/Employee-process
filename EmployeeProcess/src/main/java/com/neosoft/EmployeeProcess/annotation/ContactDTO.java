@@ -1,4 +1,5 @@
-package com.neosoft.EmployeeProcess.annotations;
+package com.neosoft.EmployeeProcess.annotation;
+
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
